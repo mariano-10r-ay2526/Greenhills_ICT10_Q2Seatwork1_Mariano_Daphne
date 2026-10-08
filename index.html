@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Python Lists: The Nickname Atlas</title>
+
+    <!-- PYSCRIPT -->
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+         <header class="header">
+            <h1>The <span>Nickname </span>Atlas of Southeast Asia</h1>
+        <p>Every nation in this region carries a name earned through geography, history, and myth. Select a country below to uncover the title it has been given.</p>
+        </header>
+
+        <section id="div1">
+        <p class="label">Country Lookup</p>
+
+                <h2>Enter an Southeast Asian country</h2>
+
+            <select id="country" class="SEA_dropdown">
+                <option value="0">Brunei</option>
+                <option value="1">Cambodia</option>
+                <option value="2">Indonesia</option>
+                <option value="3">Laos</option>
+                <option value="4">Myanmar</option>
+                <option value="5">Philippines</option>
+                <option value="6">Singapore</option>
+                <option value="7">Thailand</option>
+                <option value="8">Timor-Leste</option>
+                <option value="9">Vietnam</option>
+            </select>
+            <br>
+            <br>
+                <button py-click="reveal_nickname">
+                    Reveal Nickname
+                </button>
+                <br>
+                <br>
+                <br>
+                <div id="result">
+
+        </div>
+        </section>
+        <br>
+
+
+        <footer class="footer">
+           Seatwork 1 - 2nd Quarter F: 8 nations of Southeast Asia
+        </footer>
+
+    </main>
+
+    <py-script src="main.py"></py-script>
+
+</body>
